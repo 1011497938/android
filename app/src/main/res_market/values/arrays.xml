@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+>
+    <string-array name="compose_kind">
+        <item>衣</item>
+        <item>食</item>
+        <item>住</item>
+        <item>行</item>
+        <item>学习</item>
+        <item>运动</item>
+        <item>电子</item>
+        <item>虚拟</item>
+        <item>娱乐</item>
+        <item>出租</item>
+        <item>赠送</item>
+        <item>其他</item>
+    </string-array>
+</resources>

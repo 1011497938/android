@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeartLayout">
+        <attr name="initX" format="dimension" />
+        <attr name="initY" format="dimension" />
+        <attr name="xRand" format="dimension" />
+        <attr name="animLengthRand" format="dimension" />
+        <attr name="xPointFactor" format="dimension" />
+        <attr name="animLength" format="dimension" />
+        <attr name="heart_width" format="dimension" />
+        <attr name="heart_height" format="dimension" />
+        <attr name="bezierFactor" format="integer" />
+        <attr name="anim_duration" format="integer" />
+    </declare-styleable>
+
+    <attr name="leftIcon" format="string"/>
+    <attr name="leftIconColor" format="color"/>
+    <attr name="leftIconSize" format="dimension"/>
+    <attr name="style">
+        <flag name="light" value="0"/>
+        <flag name="dark" value="1"/>
+    </attr>
+    <attr name="hideLine" format="boolean"/>
+    <attr name="lineColor" format="color"/>
+
+    <declare-styleable name="common_iconTextView">
+        <attr name="android:textStyle"/>
+        <attr name="iconColor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="common_titleBar">
+        <attr name="android:background"/>
+        <attr name="style"/>
+        <attr name="leftIcon"/>
+        <attr name="leftIconColor"/>
+        <attr name="leftIconSize"/>
+        <attr name="hideLine"/>
+        <attr name="titleText" format="string"/>
+        <attr name="titleTextColor" format="color"/>
+        <attr name="titleStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+            <flag name="bold_italic" value="3"/>
+        </attr>
+        <attr name="titleTextSize" format="dimension"/>
+        <attr name="rightText" format="string"/>
+        <attr name="rightTextSize" format="dimension"/>
+        <attr name="rightTextColor" format="color"/>
+        <attr name="rightTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+            <flag name="bold_italic" value="3"/>
+        </attr>
+        <attr name="rightTextDisableColor" format="color"/>
+    </declare-styleable>
+</resources>

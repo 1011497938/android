@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/selectedImg"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="100%"
+            android:scaleType="centerCrop"
+        />
+    </android.support.percent.PercentRelativeLayout>
+    <ImageView
+        android:id="@+id/deleteImg"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:paddingStart="35dp"
+        android:paddingBottom="35dp"
+        android:layout_gravity="end"
+        android:src="@drawable/compose_delete"
+        android:scaleType="fitXY"
+    />
+
+</FrameLayout>

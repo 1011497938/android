@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/baseWhite"
+              android:layout_marginBottom="10dp"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/selection_padding"
+        android:layout_marginBottom="@dimen/selection_padding"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/clubSection"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/selection_head_image"
+                android:layout_width="@dimen/selection_club_head_size"
+                android:layout_height="@dimen/selection_club_head_size"
+                android:layout_marginLeft="@dimen/selection_padding"
+                android:layout_marginRight="@dimen/selection_padding"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+            >
+
+                <TextView
+                    android:id="@+id/selection_club_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"
+                    android:textColor="#555555"
+                    android:text="勤创"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+
+                <TextView
+                    android:id="@+id/selection_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="11sp"
+                    android:text="99 关注"
+                    android:textColor="#AAAAAA"
+                    android:textAppearance="?attr/textAppearanceListItem"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/selection_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/selection_image_height"
+    />
+
+    <TextView
+        android:id="@+id/selection_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/selection_padding"
+        android:layout_marginRight="@dimen/selection_padding"
+        android:layout_marginTop="@dimen/selection_padding"
+        android:text="我是标题"
+        android:textSize="17sp"
+        android:textAppearance="?attr/textAppearanceListItem"/>
+
+    <TextView
+        android:id="@+id/selection_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginStart="@dimen/selection_padding"
+        android:layout_marginTop="2dp"
+        android:text="subtitle"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/safari_subtitle"
+        android:textSize="14dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="@dimen/selection_padding"
+        android:layout_marginRight="@dimen/selection_padding"
+        android:orientation="horizontal">
+        <cn.edu.zju.qcw.android.base.widget.IconmoonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/article_see"
+            android:textColor="#819090"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:layout_marginEnd="3dp"
+        />
+        <TextView
+            android:id="@+id/see"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/safari_subtitle"
+            android:gravity="center"
+            android:textSize="12sp"
+        />
+        <cn.edu.zju.qcw.android.base.widget.IconmoonTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/article_comment"
+            android:textColor="#819090"
+            android:gravity="center"
+            android:textSize="10sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="3dp"
+        />
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:textColor="@color/safari_subtitle"
+        />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="05-14"
+            android:textSize="12sp"
+            android:textColor="@color/safari_subtitle"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_20"
+        android:layout_marginTop="15dp"
+    />
+</LinearLayout>

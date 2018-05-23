@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_marginBottom="5dp"
+>
+    <TextView
+        android:id="@+id/club_name"
+        android:layout_marginTop="10dp"
+        android:minWidth="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/border_clublist"
+        android:layout_centerInParent="true"
+    />
+    <LinearLayout
+        android:id="@+id/club_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/club_name"
+        android:layout_marginRight="-10dp"
+    >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="new"
+            android:background="@drawable/border_club_new"
+            android:textColor="@color/baseWhite"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:gravity="center"
+            android:textSize="10sp"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

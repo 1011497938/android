@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.zju.qcw.android.browser.BrowserActivity"
+    android:background="@color/baseWhite"
+>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlbar_height"
+        android:background="@color/baseWhite"
+        app:theme="@style/lightToolbar"
+        app:popupTheme="@style/PopupOverlay"
+        android:title=""
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        android:layout_marginTop="20dp"
+    >
+        <cn.edu.zju.qcw.android.base.widget.IconTextView
+            android:id="@+id/browser_back_icon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/icon_back"
+            android:textColor="@color/baseLightGray"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+        />
+
+    </android.support.v7.widget.Toolbar>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:background="@color/window_background"
+    />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/progress_bar_browser"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+    />
+    <FrameLayout
+        android:id="@+id/snackBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/activityBtnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:alpha="0"
+        android:visibility="gone"
+    >
+        <com.saltedfishcaptain.library.ShadowLayout
+            android:id="@+id/registerBtn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            app:shadow_corner_radius="4dp"
+            app:shadow_blur_radius="4dp"
+            app:shadow_offset_y="1dp"
+            app:shadow_color="#4ACBD6"
+        >
+            <cn.edu.zju.qcw.android.base.widget.IconTextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/baseWhite"
+                android:text="线上报名"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:background="@drawable/browser_register_bg"
+            />
+        </com.saltedfishcaptain.library.ShadowLayout>
+
+        <com.saltedfishcaptain.library.ShadowLayout
+            android:id="@+id/ticketBtn"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="3"
+            app:shadow_corner_radius="4dp"
+            app:shadow_blur_radius="4dp"
+            app:shadow_offset_y="1dp"
+            app:shadow_color="#7DCFF9"
+        >
+            <cn.edu.zju.qcw.android.base.widget.IconTextView
+                android:id="@+id/ticketText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/baseWhite"
+                android:text="线上领票"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:background="@drawable/browser_ticket_bg"
+            />
+        </com.saltedfishcaptain.library.ShadowLayout>
+
+    </LinearLayout>
+
+    <com.saltedfishcaptain.library.ShadowLayout
+        android:id="@+id/parttimeBtnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        app:shadow_corner_radius="4dp"
+        app:shadow_blur_radius="4dp"
+        app:shadow_offset_y="1dp"
+        app:shadow_color="#FE8970"
+        android:alpha="0"
+        android:visibility="gone"
+    >
+        <cn.edu.zju.qcw.android.base.widget.IconTextView
+            android:id="@+id/parttimeBtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColor="@color/baseWhite"
+            android:text="现在报名"
+            android:background="@drawable/browser_parttime_bg"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:gravity="center"
+        />
+    </com.saltedfishcaptain.library.ShadowLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#1A000000"
+        android:layout_marginTop="@dimen/toolbar_height"
+    />
+
+</FrameLayout>

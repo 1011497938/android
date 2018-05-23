@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="cn.edu.zju.qcw.android.browser.BrowserActivity">
+    <item
+        android:id="@+id/share"
+        android:orderInCategory="100"
+        android:title=""
+        android:icon="@drawable/browser_share_24dp"
+        app:showAsAction="always" />
+</menu>

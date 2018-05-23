@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/activity_horizontal_margin"
+    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+>
+    <View
+        android:id="@+id/line"
+        android:layout_width="10px"
+        android:layout_height="15dp"
+        android:background="@color/primary"
+        android:layout_marginEnd="10dp"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+    />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="一周内"
+        android:layout_toEndOf="@id/line"
+    />
+    <cn.edu.zju.qcw.android.base.widget.IconTextView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="更多"
+        android:textSize="12sp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/baseLightGray"
+        android:paddingEnd="10dp"
+    />
+    <cn.edu.zju.qcw.android.base.widget.IconTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/icon_more_left"
+        android:textSize="8dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/baseLightGray"
+        android:layout_alignParentEnd="true"
+    />
+
+</RelativeLayout>

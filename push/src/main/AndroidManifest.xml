@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.edu.zju.qcw.android.push">
+
+    <!-- 小米 配置开始 < -->
+    <permission
+        android:name="cn.edu.zju.qcw.android.push.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature"/>
+
+    <uses-permission android:name="cn.edu.zju.qcw.android.push.permission.MIPUSH_RECEIVE"/>
+    <!-- 小米 配置结束 < -->
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.front"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <!-- 实时通信模块、推送（均需要加入以下声明） START  LeanCloud -by Qi.Sun -->
+        <!-- 实时通信模块、推送都要使用 PushService -->
+        <service android:name="com.avos.avoscloud.PushService"/>
+
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <!-- 实时通信模块、推送 END -->
+
+
+        <!-- onesdk -->
+        <receiver
+            android:name=".OneSDKMessageReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.alibaba.sdk.android.push.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- IM Push -->
+        <receiver
+            android:name="cn.edu.zju.qcw.android.push.ImMessageReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED"/>
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED"/>
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- 这些在onesdk中已经实现 -->
+         <!--<service android:name="com.xiaomi.push.service.XMPushService" android:enabled="true" />-->
+         <!--<service android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:enabled="true" android:exported="true" />-->
+         <!--<service android:name="com.xiaomi.mipush.sdk.MessageHandleService" android:enabled="true" />-->
+        <!-- &lt;!&ndash;注：此service必须在2.2.5版本以后（包括2.2.5版本）加入&ndash;&gt; -->
+
+
+         <!--<service -->
+         <!--android:name="com.xiaomi.push.service.XMJobService" -->
+         <!--android:enabled="true" -->
+         <!--android:exported="false" -->
+         <!--android:permission="android.permission.BIND_JOB_SERVICE" /> -->
+         <!--&lt;!&ndash;注：此service必须在3.0.1版本以后（包括3.0.1版本）加入&ndash;&gt; -->
+
+
+         <!--<receiver android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver" android:exported="true"> -->
+         <!--<intent-filter> -->
+         <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" /> -->
+         <!--<category android:name="android.intent.category.DEFAULT" /> -->
+         <!--</intent-filter> -->
+         <!--</receiver> -->
+         <!--<receiver android:name="com.xiaomi.push.service.receivers.PingReceiver" android:exported="false"> -->
+         <!--<intent-filter> -->
+         <!--<action android:name="com.xiaomi.push.PING_TIMER" /> -->
+         <!--</intent-filter> -->
+         <!--</receiver> -->
+         <receiver android:name="io.rong.push.platform.MiMessageReceiver" android:exported="true">
+         <intent-filter>
+         <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+         </intent-filter>
+         <intent-filter>
+         <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+         </intent-filter>
+         <intent-filter>
+         <action android:name="com.xiaomi.mipush.ERROR" />
+         </intent-filter>
+         </receiver>
+
+    </application>
+
+</manifest>

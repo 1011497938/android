@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical">
+
+    <cn.edu.zju.qcw.android.base.widget.TitleBar
+        android:id="@+id/conversation_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:style="dark"
+    />
+    <fragment
+        android:id="@+id/conversation"
+        android:name="io.rong.imkit.fragment.ConversationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+>
+    <string name="app_name">Library</string>
+    <string name="loading"> (●′ω`●)加载中...</string>
+    <string name="load_failed">(⊙ˍ⊙)加载失败，点击重试</string>
+    <string name="load_end">(●’◡’●)ﾉ没有更多内容了</string>
+</resources>

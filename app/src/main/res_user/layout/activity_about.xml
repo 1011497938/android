@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.edu.zju.qcw.android.setting.about.AboutActivity"
+    android:orientation="vertical"
+>
+
+    <cn.edu.zju.qcw.android.base.widget.TitleBar
+        android:id="@+id/about_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:titleText="关于"
+        app:style="dark"
+    />
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical"
+        >
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_gravity="center"
+            />
+            <TextView
+                android:id="@+id/version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="版本v1.0.0"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="@dimen/activity_vertical_margin"
+                android:layout_marginEnd="@dimen/activity_vertical_margin"
+                android:text="勤工助学与创业实践指导中心 隶属 浙江大学党委学工部。浙大勤创成立于2003年，在职能上主要分为创业实践和勤工助学两部分，由创业实践指导部、对外拓展部、素能创业强化部、兼职管理部、人力资源部、办公室和技术推广部有机结合而成。作为校园文化生活的全新型综合型学生组织及社会平台，勤创以“服务同学，回报社会”为工作宗旨，尽心尽力做好为同学服务的工作，实事求是地为广大同学解决实际问题，丰富了同学们的实践经验，培养了同学们的创新创业意识。多年来各部门通力合作，打造了创业论坛、走进名企、精英团队挑战赛、跳蚤市场、企业博览会、年度舞会、创业SYB培训班、报告树等一系列精品活动。"
+            />
+
+            <TextView
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开发 swingkey@foxmail.com\n 测试  651650302@qq.com"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/black_20"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black_20"
+                android:text="浙江大学勤工助学与创业实践指导中心\n版权所有 Copyright © 2017 Papic"
+            />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

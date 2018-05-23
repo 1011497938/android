@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/window_background"
+>
+    <cn.edu.zju.qcw.android.base.widget.TitleBar
+        android:id="@+id/user_profile_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:titleText="个人资料"
+        app:rightText="保存"
+        app:style="dark"
+    />
+
+    <RelativeLayout
+        android:id="@+id/headCell"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:background="@color/baseWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="设置头像"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/baseLightGray"
+        />
+
+        <cn.edu.zju.qcw.android.base.widget.IconTextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/icon_more_left"
+            android:textColor="@color/baseLightGray"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/headImg"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/category"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+        />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/group_divider"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:background="@color/baseWhite"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+    >
+        <TextView
+            android:id="@+id/usernameCell"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="用户名"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/baseLightGray"
+        />
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/usernameCell"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="textEnd"
+            android:background="@null"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/logoutCell"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="20dp"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:background="@color/baseWhite">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="退出登录"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:textColor="@color/baseLightGray"
+            android:layout_centerInParent="true"
+        />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+>
+    <cn.edu.zju.qcw.android.base.widget.TitleBar
+        android:id="@+id/parttime_register_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        app:titleText="兼职报名"
+        app:rightText="提交"
+        app:style="light"
+    />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/recyclerView"
+        android:divider="#b5b5b5"
+         />
+</LinearLayout>

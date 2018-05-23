@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_safari"
+        android:icon="@drawable/navigation_icon_safari"
+        android:title="@string/tab_safari" />
+
+    <item
+        android:id="@+id/navigation_activity"
+        android:icon="@drawable/navigation_icon_activity"
+        android:title="@string/tab_activity" />
+
+    <item
+        android:id="@+id/navigation_market"
+        android:icon="@drawable/navigation_icon_market"
+        android:title="@string/tab_market" />
+
+    <item
+        android:id="@+id/navigation_parttime"
+        android:icon="@drawable/navigation_icon_parttime"
+        android:title="@string/tab_parttime" />
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/navigation_icon_message"
+        android:title="@string/tab_message" />
+</menu>

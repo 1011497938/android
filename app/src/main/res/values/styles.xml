@@ -1,0 +1,93 @@
+<resources>
+
+    <style name="ThemeSplash" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/launch_img</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="Theme.Dark" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/primary</item>
+    </style>
+
+    <style name="Theme.Light" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/baseWhite</item>
+    </style>
+
+    <style name="lightToolbar" parent="Theme.AppCompat.Light">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="SafariTabLayout">
+        <item name="tabIndicatorColor">@color/baseWhite</item>
+        <item name="tabIndicatorHeight">1dp</item>
+        <item name="tabBackground">@color/primary</item>
+        <item name="tabSelectedTextColor">@color/baseWhite</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/baseWhite</item>
+    </style>
+    
+    <style name="light_tool_bar">
+        <item name="actionMenuTextColor">@color/baseWhite</item>
+    </style>
+
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="hintAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- Ticket -->
+    <style name="ContentMainBadgeTitle" parent="AppTheme">
+        <item name="android:textColor">@color/contentBadgeTitle</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="TitleBadgeText" parent="AppTheme">
+        <item name="android:textColor">@color/titleBadgeText</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <style name="TitleBadgeTitle" parent="AppTheme">
+        <item name="android:textColor">@color/titleBadgeTitle</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="ticketToolBar" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/transparent</item> <!--  敲定颜色-->
+    </style>
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/transparent</item>
+        <item name="colorControlActivated">@color/transparent</item>
+    </style>
+
+    <style name="loading_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+</resources>
+

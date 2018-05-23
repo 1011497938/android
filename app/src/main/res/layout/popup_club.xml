@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:elevation="20dp"
+             app:elevation="20dp"
+>
+
+    <FrameLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@drawable/gradient_club_profile">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/baseWhite"
+        />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 260-20 -->
+            <Button
+                android:id="@+id/followBtn"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="240dp"
+                android:background="@drawable/border_club_profile_follow_button"
+            />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/topContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/cancelBtn"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/common_close"
+                        android:layout_marginStart="10dp"
+                    />
+
+                    <Switch
+                        android:id="@+id/pushSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                    />
+                    <TextView
+                        android:id="@+id/pushText"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_toStartOf="@+id/pushSwitch"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="5dp"
+                        android:textColor="@color/baseWhite"
+                    />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/headImg"
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:layout_below="@id/topContainer"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/clubName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/headImg"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/baseWhite"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/follow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/clubName"
+                    android:textAlignment="center"
+                    android:textColor="@color/baseWhite"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/follow"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/profile_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:maxLines="1"
+                            android:textColor="@color/baseWhite"
+                            android:background="@color/transparent"/>
+                        <cn.edu.zju.qcw.android.base.widget.IconmoonTextView
+                            android:id="@+id/phone_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:layout_centerInParent="true"
+                            android:background="@color/transparent"
+                            android:gravity="center"
+                            android:textColor="@color/baseWhite"
+                            android:text="@string/club_phone"/>
+                        <cn.edu.zju.qcw.android.base.widget.IconmoonTextView
+                            android:id="@+id/wx_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:layout_toStartOf="@id/phone_btn"
+                            android:background="@color/transparent"
+                            android:textColor="@color/baseWhite"
+                            android:text="@string/club_wx"/>
+                        <cn.edu.zju.qcw.android.base.widget.IconmoonTextView
+                            android:id="@+id/chat_btn"
+                            android:layout_width="45dp"
+                            android:layout_height="45dp"
+                            android:gravity="center"
+                            android:textColor="@color/baseWhite"
+                            android:layout_toEndOf="@id/phone_btn"
+                            android:background="@color/transparent"
+                            android:text="@string/club_im"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FAFAFA"
+                    android:clipChildren="false">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ScrollView
+                            android:id="@+id/scrollView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FAFAFA"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="25dp">
+
+                            <TextView
+                                android:id="@+id/describe"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:scrollbarSize="14sp"/>
+                        </ScrollView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</FrameLayout>

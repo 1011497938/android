@@ -1,0 +1,41 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+>
+    <string name="icon_menu">&#xe602;</string>
+    <string name="icon_add">&#xe605;</string>
+    <string name="icon_media_play">&#xe608;</string>
+    <string name="icon_media_next">&#xe609;</string>
+    <string name="icon_close">&#xe619;</string>
+
+    <string name="icon_wifi5">&#xe60b;</string>
+
+    <string name="market_like">&#xe90b;</string>
+    <string name="market_see">&#xe909;</string>
+
+    <string name="club_wx">&#xf1d7;</string>
+    <string name="club_phone">&#xe90f;</string>
+    <string name="club_im">&#xe96b;</string>
+
+    <string name="article_see">&#xe000;</string>
+    <string name="article_comment">&#xe90e;</string>
+    <string name="article_music">&#xe913;</string>
+
+    <string name="goods_detail_phone">&#xe0dd;</string>
+    <string name="goods_detail_im">&#xe90e;</string>
+
+    <!-- icon font -->
+    <string name="icon_user">&#xe635;</string>
+    <string name="icon_live">&#xe600;</string>
+    <string name="icon_scan">&#xe65d;</string>
+    <string name="icon_search">&#xe610;</string>
+    <string name="icon_more_left">&#xe61a;</string>
+    <string name="icon_back">&#xe618;</string>
+    <string name="icon_manage">&#xe790;</string>
+    <string name="icon_up_arrow">&#xe76e;</string>
+    <!-- drawer-->
+    <string name="icon_ticket">&#xe61c;</string>
+    <string name="icon_market">&#xe60d;</string>
+    <string name="icon_parttime">&#xe62d;</string>
+    <string name="icon_settings">&#xe636;</string>
+</resources>

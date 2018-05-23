@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            app:contentScrim="@color/baseWhite"
+            android:minHeight="@dimen/status_bar_height"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:collapsedTitleTextAppearance="@style/Toolbar.TitleText"
+        >
+
+            <com.stx.xhb.xbanner.XBanner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:AutoPlayTime="4000"
+                app:pointNormal="@drawable/shape_noraml"
+                app:pointSelect="@drawable/shape_selected"
+                android:background="@color/baseWhite"
+                app:pointsPosition="CENTER"
+                app:tipTextSize="12sp"
+                app:isShowNumberIndicator="false"
+                app:pageChangeDuration="800"/>
+
+            <cn.edu.zju.qcw.android.base.widget.IconTextView
+                android:id="@+id/market_search_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="@color/baseWhite"
+                android:text="@string/icon_search"
+                android:background="@drawable/market_home_search_shape"
+            />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <cn.edu.zju.qcw.android.base.widget.PapicTabLayout
+            android:id="@+id/market_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabbar_height"
+            android:clipToPadding="false"
+            android:background="@color/baseWhite"
+            app:stl_defaultTabTextColor="@drawable/safari_tab_text_color"
+            app:stl_defaultTabTextHorizontalPadding="18dp"
+            app:stl_dividerColor="@color/transparent"
+            app:stl_dividerThickness="0dp"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorColor="@color/primary"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="2.5dp"
+            app:stl_underlineThickness="1px"
+            app:stl_underlineColor="@color/transparent"
+            app:stl_distributeEvenly="true"
+            app:stl_indicatorWidth="auto"
+            app:stl_indicatorWithoutPadding="true"
+            android:overScrollMode="never"
+        />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/compose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        app:fabSize="auto"
+        app:backgroundTint="@color/primary"
+        app:rippleColor="@color/black_40"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:src="@drawable/market_fab_icon"
+        android:scaleType="centerCrop"
+    />
+
+</android.support.design.widget.CoordinatorLayout>

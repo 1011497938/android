@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="cn.edu.zju.qcw.android">
+
+    <!-- 基础模块（必须加入以下声明）START -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-feature android:name="android.hardware.camera.front"/>
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- 基础模块 END -->
+    <application
+        android:name=".PapicApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MyTheme">
+
+        <meta-data android:name="com.alibaba.app.appkey" android:value="24405181"/>
+        <meta-data android:name="com.alibaba.app.appsecret" android:value="ff98cf06d895d06cabc5fc5713520051"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="cn.edu.zju.qcw.android.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path"/>
+        </provider>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:theme="@style/Theme.Dark"
+            android:clipToPadding="true"
+            android:screenOrientation="portrait"
+        >
+        </activity>
+
+        <activity
+            android:name=".splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeSplash"
+            android:exported="true"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".user.signin.view.SigninActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait"
+        />
+
+        <!-- market -->
+        <activity
+            android:name=".market.detail.view.GoodsDetailActivity"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".market.compose.view.ComposeActivity"
+            android:screenOrientation="portrait"
+        />
+
+        <!-- browser -->
+        <activity
+            android:name=".browser.BrowserActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Light"
+            android:screenOrientation="portrait"
+        />
+
+        <!-- common -->
+        <activity
+            android:name=".common.comment.view.CommentActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".common.search.SearchActivity"
+            android:screenOrientation="portrait"
+        />
+
+        <!-- user -->
+        <activity
+            android:name=".user.profile.ProfileActivity"
+            android:theme="@style/Theme.Dark"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".user.profile.clipimage.ClipImageActivity"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".user.parttime_apply.ApplyActivity"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".user.user_goods.UserGoodsActivity"
+            android:theme="@style/Theme.Dark"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".user.ticket.TicketActivity"
+            android:theme="@style/Theme.Dark"
+            android:screenOrientation="portrait"
+        />
+
+        <!-- activity -->
+        <activity
+            android:name=".activity.scan.ScanActivity"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".activity.liveRoom.ui.LiveShowActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.Dark"
+        />
+        <activity
+            android:name=".activity.livelist.view.LiveListActivity"
+            android:theme="@style/Theme.Dark"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".activity.history.view.HistoryActivity"
+            android:theme="@style/Theme.Dark"
+            android:screenOrientation="portrait"
+        />
+        <activity
+            android:name=".activity.wall.view.WallActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+        />
+
+        <!-- settings -->
+        <activity android:name=".setting.view.SettingsActivity"
+                  android:theme="@style/Theme.Dark"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".setting.about.AboutActivity"
+                  android:theme="@style/Theme.Dark"
+                  android:screenOrientation="portrait"
+        />
+
+        <!-- IM -->
+        <activity
+            android:name=".message.ConversationActivity"
+            android:theme="@style/Theme.Dark"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+        >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <data
+                    android:host="cn.edu.zju.qcw.android"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong"/>
+            </intent-filter>
+        </activity>
+
+        <!-- parttime -->
+        <activity
+            android:name=".parttime.form.ParttimeFormActivity"
+            android:theme="@style/Theme.Light"
+            android:windowSoftInputMode="stateAlwaysVisible|adjustPan"
+            android:screenOrientation="portrait"
+        />
+
+    </application>
+
+</manifest>

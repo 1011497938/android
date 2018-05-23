@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#F9694F</color>
+    <color name="colorPrimary">#FFF9694F</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF00A4F3</color>
+    <color name="window_background">#FFF5F5F5</color>
+
+    <color name="baseWhite">#FFFFFFFF</color>
+    <color name="baseBlack">#FF000000</color>
+    <color name="baseLightGray">#FF707070</color>
+    <color name="baseDarkGray">#FF555555</color>
+    <color name="semitransparent">#7DFFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="black_20">#33000000</color>
+    <color name="black_30">#4C000000</color>
+    <color name="black_40">#66000000</color>
+    <color name="group_gray">#FFF5F5F5</color>
+    <color name="group_divider">#e1e1e1</color>
+
+    <color name="item_divider">#D8D8D8</color>
+
+    <color name="progress_loading_color">#FF1AD6FD</color>
+
+    <color name="item_pressed_color">#CCCCCC</color>
+    <color name="item_activated_color">#77CEEE</color>
+
+    <color name="bg_bottom_navigation">#fcfcfc</color>
+    <color name="accent_bottom_navigation">#FF6A6A</color>
+    <color name="inactive_bottom_navigation">#9b9b9b</color>
+
+    <color name="common_content_bg">#f9f9fd</color>
+
+    <!-- SelectionItem -->
+    <color name="safari_subtitle">#819090</color>
+
+    <!-- Safari -->
+    <color name="club_list_background">#F8F6F8</color>
+
+    <color name="side_bar_text_color">#FF707070</color>
+
+    <color name="recyclerview_empty_btn_color">#FF00A4F3</color>
+
+    <!-- TitleBar -->
+    <color name="common_titleBar_light_bg">#FFFFFFFF</color>
+    <color name="common_titleBar_light_content">#FF212137</color>
+    <color name="common_titleBar_light_right_enable">#FF212137</color>
+    <color name="common_titleBar_light_right_disable">#80212137</color>
+    <color name="common_titleBar_light_line">#1A000000</color>
+
+    <color name="common_titleBar_dark_bg">#F9694F</color>
+    <color name="common_titleBar_dark_content">#FFFFFFFF</color>
+    <color name="common_titleBar_dark_right_enable">#FFFFFFFF</color>
+    <color name="common_titleBar_dark_right_disable">#26FFFFFF</color>
+    <color name="common_titleBar_dark_line">#1AFFFFFF</color>
+
+</resources>

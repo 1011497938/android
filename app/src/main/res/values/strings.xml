@@ -1,0 +1,32 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation"
+>
+    <string name="app_name">勤创</string>
+
+    <string name="tab_safari">发现</string>
+    <string name="tab_activity">活动</string>
+    <string name="tab_market">跳蚤市场</string>
+    <string name="tab_parttime">兼职</string>
+    <string name="tab_message">消息</string>
+
+
+    <string name="title_activity_safari">SafariActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_market">MarketActivity</string>
+    <string name="title_activity_browser">BrowserActivity</string>
+
+    <!-- Safari-->
+    <string name="follow">%1$s 关注</string>
+
+    <!-- Market -->
+    <string name="price">￥%1$s</string>
+
+    <!-- Parttime -->
+    <string name="register">%1$s 报名</string>
+    <string name="visit">%1$s 浏览</string>
+</resources>

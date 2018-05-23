@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FoldingCell">
+        <attr name="backSideColor" format="color" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="additionalFlipsCount" format="integer" />
+        <attr name="cameraHeight" format="integer" />
+    </declare-styleable>
+
+    <!--取景框-->
+    <declare-styleable name="ClipImageView">
+        <attr name="civHeight" format="integer" />
+        <attr name="civWidth" format="integer" />
+        <attr name="civTipText" format="string" />
+        <attr name="civTipTextSize" format="dimension" />
+        <attr name="civMaskColor" format="color" />
+        <attr name="civClipPadding" format="dimension" />
+        <attr name="civClipRoundCorner" format="dimension|reference" />
+        <attr name="civClipCircle" format="boolean" />
+    </declare-styleable>
+</resources>
